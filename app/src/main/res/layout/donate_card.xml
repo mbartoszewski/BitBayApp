@@ -1,0 +1,173 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/donate_constraint"
+    android:background="@color/colorTransparent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/donate_textview"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/paypal_donate"
+        android:textAlignment="center"
+        android:textSize="@dimen/title_text_size"
+        app:layout_constraintBottom_toBottomOf="@+id/paypal_donate_button"
+        app:layout_constraintEnd_toStartOf="@+id/paypal_donate_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/paypal_donate_button" />
+
+    <ImageButton
+        android:id="@+id/paypal_donate_button"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/paypalme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/btc_constraint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/paypal_donate_button">
+
+        <TextView
+            android:id="@+id/btc_address"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="329MsVej9kx7hmrYqFQRTx3MVLxB3qNmj5"
+            android:textSize="@dimen/text_size"
+            app:layout_constraintEnd_toStartOf="@+id/btc_address_copy_button"
+            app:layout_constraintStart_toStartOf="@+id/btc_address_hint"
+            app:layout_constraintTop_toBottomOf="@+id/btc_address_hint" />
+
+        <ImageButton
+            android:id="@+id/btc_address_copy_button"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="8dp"
+            android:background="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/btc_address_hint"
+            app:srcCompat="@drawable/baseline_filter_none_24" />
+
+        <TextView
+            android:id="@+id/btc_address_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="BTC address:"
+            android:textColor="?android:attr/textColorHint"
+            android:textSize="@dimen/hint_text_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/lsk_constraint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btc_constraint">
+
+        <TextView
+            android:id="@+id/lsk_address"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="4400349293584149952L"
+            android:textSize="@dimen/text_size"
+            app:layout_constraintEnd_toStartOf="@+id/lsk_address_copy_button"
+            app:layout_constraintStart_toStartOf="@+id/lsk_address_hint"
+            app:layout_constraintTop_toBottomOf="@+id/lsk_address_hint" />
+
+        <ImageButton
+            android:id="@+id/lsk_address_copy_button"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="8dp"
+            android:background="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/lsk_address_hint"
+            app:srcCompat="@drawable/baseline_filter_none_24" />
+
+        <TextView
+            android:id="@+id/lsk_address_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="LSK address:"
+            android:textColor="?android:attr/textColorHint"
+            android:textSize="@dimen/hint_text_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/eth_constraint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lsk_constraint">
+
+        <TextView
+            android:id="@+id/eth_address"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="0xc6fe04a5307ed5dd758bfff0d58c0bc37cf5e042"
+            android:textSize="@dimen/text_size"
+            app:layout_constraintEnd_toStartOf="@+id/eth_address_copy_button"
+            app:layout_constraintStart_toStartOf="@+id/eth_address_hint"
+            app:layout_constraintTop_toBottomOf="@+id/eth_address_hint" />
+
+        <ImageButton
+            android:id="@+id/eth_address_copy_button"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="8dp"
+            android:background="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/eth_address_hint"
+            app:srcCompat="@drawable/baseline_filter_none_24" />
+
+        <TextView
+            android:id="@+id/eth_address_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="ETH address:"
+            android:textColor="?android:attr/textColorHint"
+            android:textSize="@dimen/hint_text_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

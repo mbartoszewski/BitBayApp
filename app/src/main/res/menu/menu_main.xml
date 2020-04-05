@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/nav_menu_rss_sources"
+        android:title="@string/menu_rss_sources"
+        android:visible="false"
+        android:icon="@drawable/baseline_note_add_24"
+        app:showAsAction="always"
+        />
+
+    <item android:title="@string/menu_market"
+        android:id="@+id/nav_menu_market">
+        <menu>
+            <item android:id="@+id/nav_menu_exchange"
+                android:icon="@drawable/baseline_show_chart_24"
+                android:title="@string/menu_exchange" />
+
+            <item android:id="@+id/nav_menu_offers"
+                android:icon="@drawable/baseline_reorder_24"
+                android:title="@string/menu_offers"
+                android:visible="false"/>
+        </menu>
+    </item>
+
+    <item android:title="@string/menu_account"
+        android:id="@+id/nav_menu_account">
+        <menu>
+            <item android:id="@+id/nav_menu_wallet"
+                android:icon="@drawable/baseline_account_balance_wallet_24"
+                android:title="@string/menu_wallet"
+                android:visible="false"/>
+
+            <item android:id="@+id/nav_menu_transaction_history"
+                android:icon="@drawable/baseline_history_24"
+                android:title="@string/transaction_history_fragment_name"
+                android:visible="false"/>
+
+            <item android:id="@+id/nav_menu_login"
+                android:icon="@drawable/baseline_person_24"
+                android:title="@string/menu_login"
+                android:visible="true"/>
+
+            <item android:id="@+id/nav_menu_logout"
+                android:icon="@drawable/baseline_person_outline_24"
+                android:title="@string/menu_logout"
+                android:visible="false"/>
+        </menu>
+    </item>
+
+    <item android:title="@string/menu_app"
+        android:id="@+id/nav_menu_bitbay_app">
+        <menu>
+            <item android:id="@+id/nav_menu_rss_feed"
+                android:icon="@drawable/baseline_rss_feed_24"
+                android:title="@string/menu_rss_feed"
+                android:visible="true"/>
+
+            <item android:id="@+id/nav_menu_youtube_channel"
+                android:icon="@drawable/baseline_score_24"
+                android:title="@string/menu_youtube_channel"
+                android:visible="false"/>
+
+            <item android:id="@+id/nav_menu_calculator"
+                android:icon="@drawable/baseline_money_24"
+                android:title="@string/menu_calculator" />
+
+            <item android:id="@+id/nav_menu_night_mode"
+                android:icon="@drawable/baseline_visibility_24"
+                android:title="@string/settings_night_mode_switch"
+                app:actionLayout="@layout/night_mode_switch"
+                app:showAsAction="always"/>
+
+            <item android:id="@+id/nav_menu_reset_ad_preferences"
+
+                android:title="@string/settings_reset_ad_preferences" />
+        </menu>
+    </item>
+    <item android:title="@string/menu_donate"
+        android:id="@+id/nav_menu_donate">
+        <menu>
+            <item android:id="@+id/nav_menu_donate_paypal"
+                android:icon="@drawable/baseline_card_giftcard_24"
+                android:title="@string/menu_donate_paypal" />
+
+        </menu>
+    </item>
+</menu>

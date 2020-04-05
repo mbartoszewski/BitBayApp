@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/wallet_constraint"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="4dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="4dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <TextView
+        android:id="@+id/available_funds_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/default_card_value"
+        app:layout_constraintBottom_toBottomOf="@+id/currency_doe_text"
+        app:layout_constraintStart_toEndOf="@+id/currency_doe_text"
+        app:layout_constraintTop_toTopOf="@+id/currency_doe_text" />
+
+    <TextView
+        android:id="@+id/total_funds_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="@string/default_card_value"
+        android:textSize="@dimen/hint_text_size"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/deposit_withdraw_constraint"
+        app:layout_constraintTop_toBottomOf="@+id/funds_value_text" />
+
+    <TextView
+        android:id="@+id/locked_funds_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/default_card_value"
+        android:textColor="?android:attr/textColorHint"
+        android:textSize="@dimen/hint_text_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/available_funds_text"
+        app:layout_constraintTop_toBottomOf="@+id/available_funds_text" />
+
+    <TextView
+        android:id="@+id/currency_doe_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/default_card_value"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/funds_value_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="@string/default_card_value"
+        app:layout_constraintBottom_toBottomOf="@+id/available_funds_text"
+        app:layout_constraintEnd_toStartOf="@+id/deposit_withdraw_constraint"
+        app:layout_constraintTop_toTopOf="@+id/available_funds_text"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/locked_funds_image_view"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginEnd="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/locked_funds_text"
+        app:layout_constraintEnd_toStartOf="@+id/locked_funds_text"
+        app:layout_constraintTop_toTopOf="@+id/locked_funds_text"
+        app:srcCompat="@drawable/baseline_lock_24" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/deposit_withdraw_constraint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/withdraw_button"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:drawableTop="@drawable/baseline_arrow_upward_24"
+            android:gravity="bottom|center"
+            android:paddingBottom="8dp"
+            android:text="@string/withdraw_wallet_button"
+            android:textSize="@dimen/button_text_size"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/deposit_button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/deposit_button"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/baseline_arrow_downward_24"
+            android:gravity="bottom|center"
+            android:paddingBottom="8dp"
+            android:text="@string/deposit_wallet_button"
+            android:textSize="@dimen/button_text_size"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

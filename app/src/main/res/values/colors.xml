@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#23527c</color>
+    <color name="colorPrimaryDark">#002a50</color>
+    <color name="colorPrimaryLight">#567eab</color>
+    <color name="colorAccent">#4090ff</color>
+
+    <color name="colorPrimaryNightTheme">#455a64</color>
+    <color name="colorPrimaryDarkNightTheme">#1c313a</color>
+    <color name="colorPrimaryLightNightTheme">#718792</color>
+    <color name="colorAccentPrimaryNightTheme">#4090ff</color>
+    <color name="colorTextOnPrimary">#ffffff</color>
+
+    <color name="colorSecondary">#69f0ae</color>
+    <color name="colorSecondaryDark">#2bbd7e</color>
+    <color name="colorSecondaryLight">#9fffe0</color>
+    <color name="black">#000000</color>
+
+
+    <color name="bcc">#ff9639</color>
+    <color name="btc">#ffb400</color>
+    <color name="btg">#0d2035</color>
+    <color name="dash">#1c74bb</color>
+    <color name="eth">#010101</color>
+    <color name="game">#4f6c83</color>
+    <color name="kzc">#1f8baa</color>
+    <color name="lsk">#1170a4</color>
+    <color name="ltc">#8d97ac</color>
+    <color name="xin">#e72d45</color>
+    <color name="xrp">#27a2db</color>
+    <color name="xmr">#ef6522</color>
+    <color name="zec">#e7b04b</color>
+    <color name="omg">#1a56f0</color>
+    <color name="gnt">#001d57</color>
+    <color name="fto">#f1a223</color>
+    <color name="zrx">#262626</color>
+    <color name="bat">#873268</color>
+    <color name="rep">#5d2551</color>
+    <color name="pay">#111111</color>
+    <color name="neu">#bcd11f</color>
+    <color name="trx">#d30f22</color>
+    <color name="amlt">#1847b8</color>
+    <color name="exy">#1c203a</color>
+    <color name="pln">#f57c00</color>
+    <color name="usd">#37c866</color>
+    <color name="eur">#00b0ff</color>
+
+    <color name="colorRed">#ff0000</color>
+    <color name="sell">#fd2a47</color>
+    <color name="buy">#3fcfb4</color>
+    <color name="colorAlpha00">#00ffffff</color>
+    <color name="white">#ffffff</color>
+    <color name="colorTransBg">#25000000</color>
+    <color name="colorTransparent">#00000000</color>
+    <color name="headerBackground">#33000000</color>
+    <color name="bg_row_background">#fa315b</color>
+</resources>

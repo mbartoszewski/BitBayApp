@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/deposit_constraint"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorTransparent"
+    android:padding="2dp"
+    android:visibility="visible">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/crypto_deposit_constraint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/crypto_deposit_address_constraint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:padding="4dp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/crypto_deposit_address_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/deposit_adress_hint"
+                android:textSize="@dimen/hint_text_size"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/crypto_deposit_address_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="-"
+                android:textSize="@dimen/orderbook_text_size"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:layout_constraintEnd_toStartOf="@+id/crypto_deposit_address_copy"
+                app:layout_constraintStart_toStartOf="@+id/crypto_deposit_address_hint"
+                app:layout_constraintTop_toBottomOf="@+id/crypto_deposit_address_hint" />
+
+            <ImageButton
+                android:id="@+id/crypto_deposit_address_share"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="8dp"
+                android:background="@null"
+                app:layout_constraintBottom_toBottomOf="@+id/crypto_deposit_address_copy"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/crypto_deposit_address_copy"
+                app:srcCompat="@drawable/baseline_share_24" />
+
+            <ImageButton
+                android:id="@+id/crypto_deposit_address_copy"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="8dp"
+                android:background="@null"
+                app:layout_constraintBottom_toBottomOf="@+id/crypto_deposit_address_text"
+                app:layout_constraintEnd_toStartOf="@+id/crypto_deposit_address_share"
+                app:layout_constraintTop_toTopOf="@+id/crypto_deposit_address_text"
+                app:srcCompat="@drawable/baseline_filter_none_24" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/crypto_deposit_paymentID_constraint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:padding="4dp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/crypto_deposit_address_constraint">
+
+            <TextView
+                android:id="@+id/crypto_deposit_paymentID_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/deposit_payment_id_hint"
+                android:textSize="@dimen/hint_text_size"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/crypto_deposit_paymentID_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="-"
+                android:textSize="@dimen/orderbook_text_size"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:layout_constraintEnd_toStartOf="@+id/crypto_deposit_paymentId_copy"
+                app:layout_constraintStart_toStartOf="@+id/crypto_deposit_paymentID_hint"
+                app:layout_constraintTop_toBottomOf="@+id/crypto_deposit_paymentID_hint" />
+
+            <ImageButton
+                android:id="@+id/crypto_deposit_paymentId_share"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="8dp"
+                android:background="@null"
+                app:layout_constraintBottom_toBottomOf="@+id/crypto_deposit_paymentId_copy"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/crypto_deposit_paymentId_copy"
+                app:srcCompat="@drawable/baseline_share_24" />
+
+            <ImageButton
+                android:id="@+id/crypto_deposit_paymentId_copy"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="8dp"
+                android:background="@null"
+                app:layout_constraintBottom_toBottomOf="@+id/crypto_deposit_paymentID_text"
+                app:layout_constraintEnd_toStartOf="@+id/crypto_deposit_paymentId_share"
+                app:layout_constraintTop_toTopOf="@+id/crypto_deposit_paymentID_text"
+                app:srcCompat="@drawable/baseline_filter_none_24" />
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/fiat_deposit_constraint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/fiat_deposit_address_constraint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:padding="4dp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fiat_deposit_accoun_number_constraint">
+
+            <TextView
+                android:id="@+id/fiat_deposit_address_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/deposit_account_number_hint"
+                android:textSize="@dimen/hint_text_size"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/fiat_deposit_address_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="-"
+                android:textSize="@dimen/orderbook_text_size"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:layout_constraintEnd_toStartOf="@+id/fiat_deposit_address_copy"
+                app:layout_constraintStart_toStartOf="@+id/fiat_deposit_address_hint"
+                app:layout_constraintTop_toBottomOf="@+id/fiat_deposit_address_hint" />
+
+            <ImageButton
+                android:id="@+id/fiat_deposit_address_share"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="8dp"
+                android:background="@null"
+                app:layout_constraintBottom_toBottomOf="@+id/fiat_deposit_address_copy"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/fiat_deposit_address_copy"
+                app:srcCompat="@drawable/baseline_share_24" />
+
+            <ImageButton
+                android:id="@+id/fiat_deposit_address_copy"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="8dp"
+                android:background="@null"
+                app:layout_constraintBottom_toBottomOf="@+id/fiat_deposit_address_text"
+                app:layout_constraintEnd_toStartOf="@+id/fiat_deposit_address_share"
+                app:layout_constraintTop_toTopOf="@+id/fiat_deposit_address_text"
+                app:srcCompat="@drawable/baseline_filter_none_24" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/fiat_deposit_name_constraint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:padding="4dp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fiat_deposit_address_constraint">
+
+            <TextView
+                android:id="@+id/fiat_deposit_name_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/deposit_recipient_hint"
+                android:textSize="@dimen/hint_text_size"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/fiat_deposit_name_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="-"
+                android:textSize="@dimen/orderbook_text_size"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:layout_constraintEnd_toStartOf="@+id/fiat_deposit_name_copy"
+                app:layout_constraintStart_toStartOf="@+id/fiat_deposit_name_hint"
+                app:layout_constraintTop_toBottomOf="@+id/fiat_deposit_name_hint" />
+
+            <ImageButton
+                android:id="@+id/fiat_deposit_name_share"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="8dp"
+                android:background="@null"
+                app:layout_constraintBottom_toBottomOf="@+id/fiat_deposit_name_copy"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/fiat_deposit_name_copy"
+                app:srcCompat="@drawable/baseline_share_24" />
+
+            <ImageButton
+                android:id="@+id/fiat_deposit_name_copy"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@null"
+                app:layout_constraintBottom_toBottomOf="@+id/fiat_deposit_name_text"
+                app:layout_constraintEnd_toStartOf="@+id/fiat_deposit_name_share"
+                app:layout_constraintTop_toBottomOf="@+id/fiat_deposit_name_hint"
+                app:srcCompat="@drawable/baseline_filter_none_24" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/fiat_deposit_swift_constraint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:padding="4dp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fiat_deposit_title_constraint">
+
+            <TextView
+                android:id="@+id/fiat_deposit_swift_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/deposit_swift_hint"
+                android:textSize="@dimen/hint_text_size"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/fiat_deposit_swift_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="-"
+                android:textSize="@dimen/orderbook_text_size"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:layout_constraintEnd_toStartOf="@+id/fiat_deposit_swift_copy"
+                app:layout_constraintStart_toStartOf="@+id/fiat_deposit_swift_hint"
+                app:layout_constraintTop_toBottomOf="@+id/fiat_deposit_swift_hint" />
+
+            <ImageButton
+                android:id="@+id/fiat_deposit_swift_share"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="8dp"
+                android:background="@null"
+                app:layout_constraintBottom_toBottomOf="@+id/fiat_deposit_swift_copy"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/fiat_deposit_swift_copy"
+                app:srcCompat="@drawable/baseline_share_24" />
+
+            <ImageButton
+                android:id="@+id/fiat_deposit_swift_copy"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="8dp"
+                android:background="@null"
+                app:layout_constraintBottom_toBottomOf="@+id/fiat_deposit_swift_text"
+                app:layout_constraintEnd_toStartOf="@+id/fiat_deposit_swift_share"
+                app:layout_constraintTop_toTopOf="@+id/fiat_deposit_swift_text"
+                app:srcCompat="@drawable/baseline_filter_none_24" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/fiat_deposit_title_constraint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:padding="4dp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fiat_deposit_name_constraint">
+
+            <TextView
+                android:id="@+id/fiat_deposit_title_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/deposit_title_hint"
+                android:textSize="@dimen/hint_text_size"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/fiat_deposit_title_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="-"
+                android:textSize="@dimen/orderbook_text_size"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:layout_constraintEnd_toStartOf="@+id/fiat_deposit_title_copy"
+                app:layout_constraintStart_toStartOf="@+id/fiat_deposit_title_hint"
+                app:layout_constraintTop_toBottomOf="@+id/fiat_deposit_title_hint" />
+
+            <ImageButton
+                android:id="@+id/fiat_deposit_title_share"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="8dp"
+                android:background="@null"
+                app:layout_constraintBottom_toBottomOf="@+id/fiat_deposit_title_copy"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/fiat_deposit_title_copy"
+                app:srcCompat="@drawable/baseline_share_24" />
+
+            <ImageButton
+                android:id="@+id/fiat_deposit_title_copy"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="8dp"
+                android:background="@null"
+                app:layout_constraintBottom_toBottomOf="@+id/fiat_deposit_title_text"
+                app:layout_constraintEnd_toStartOf="@+id/fiat_deposit_title_share"
+                app:layout_constraintTop_toTopOf="@+id/fiat_deposit_title_text"
+                app:srcCompat="@drawable/baseline_filter_none_24" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/fiat_deposit_accoun_number_constraint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:padding="4dp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/fiat_deposit_account_number_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/deposit_adress_hint"
+                android:textSize="@dimen/hint_text_size"
+                android:visibility="visible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/fiat_deposit_account_number_share"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="8dp"
+                android:background="@null"
+                app:layout_constraintBottom_toBottomOf="@+id/fiat_deposit_account_number_copy"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/fiat_deposit_account_number_copy"
+                app:srcCompat="@drawable/baseline_share_24" />
+
+            <ImageButton
+                android:id="@+id/fiat_deposit_account_number_copy"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="8dp"
+                android:background="@null"
+                app:layout_constraintBottom_toBottomOf="@+id/fiat_deposit_account_number_text"
+                app:layout_constraintEnd_toStartOf="@+id/fiat_deposit_account_number_share"
+                app:layout_constraintTop_toTopOf="@+id/fiat_deposit_account_number_text"
+                app:srcCompat="@drawable/baseline_filter_none_24" />
+
+            <TextView
+                android:id="@+id/fiat_deposit_account_number_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="-"
+                android:textSize="@dimen/orderbook_text_size"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:layout_constraintEnd_toStartOf="@+id/fiat_deposit_account_number_copy"
+                app:layout_constraintStart_toStartOf="@+id/fiat_deposit_account_number_hint"
+                app:layout_constraintTop_toBottomOf="@+id/fiat_deposit_account_number_hint" />
+        </android.support.constraint.ConstraintLayout>
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

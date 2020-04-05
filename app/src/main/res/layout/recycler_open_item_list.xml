@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/value_hint_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/valueHint"
+            android:textColor="?android:attr/textColorHint"
+            android:textSize="@dimen/hint_text_size"
+            app:layout_constraintBottom_toTopOf="@+id/transaction_value_text"
+            app:layout_constraintEnd_toEndOf="@+id/transaction_value_text"
+            app:layout_constraintStart_toStartOf="@+id/transaction_value_text" />
+
+        <TextView
+            android:id="@+id/rate_hint_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/rateHint"
+            android:textColor="?android:attr/textColorHint"
+            android:textSize="@dimen/hint_text_size"
+            app:layout_constraintEnd_toEndOf="@+id/transaction_rate_text"
+            app:layout_constraintStart_toStartOf="@+id/transaction_rate_text"
+            app:layout_constraintTop_toBottomOf="@+id/transaction_type_text" />
+
+        <TextView
+            android:id="@+id/amount_hint_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/amountHint"
+            android:textColor="?android:attr/textColorHint"
+            android:textSize="@dimen/hint_text_size"
+            app:layout_constraintBottom_toTopOf="@+id/transaction_amount_text"
+            app:layout_constraintEnd_toEndOf="@+id/transaction_amount_text"
+            app:layout_constraintStart_toStartOf="@+id/transaction_amount_text" />
+
+        <TextView
+            android:id="@+id/current_percentage_value_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="@string/default_card_value"
+            android:textColor="?android:attr/textColorHint"
+            android:textSize="@dimen/hint_text_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/transaction_rate_text"
+            app:layout_constraintStart_toStartOf="@+id/transaction_rate_text"
+            app:layout_constraintTop_toBottomOf="@+id/transaction_rate_text" />
+
+        <TextView
+            android:id="@+id/current_order_value_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/default_card_value"
+            android:textColor="?android:attr/textColorHint"
+            android:textSize="@dimen/hint_text_size"
+            app:layout_constraintBottom_toBottomOf="@+id/current_amount_text"
+            app:layout_constraintEnd_toEndOf="@+id/transaction_value_text"
+            app:layout_constraintStart_toStartOf="@+id/transaction_value_text"
+            app:layout_constraintTop_toTopOf="@+id/current_amount_text" />
+
+        <TextView
+            android:id="@+id/transaction_value_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="@string/default_card_value"
+            android:textSize="@dimen/text_size"
+            app:layout_constraintBottom_toBottomOf="@+id/transaction_amount_text"
+            app:layout_constraintEnd_toStartOf="@+id/delete_offer_constraint"
+            app:layout_constraintTop_toTopOf="@+id/transaction_amount_text" />
+
+        <TextView
+            android:id="@+id/offer_added_date_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="@string/default_card_value"
+            android:textSize="@dimen/hint_text_size"
+            app:layout_constraintBottom_toBottomOf="@+id/market_code_text"
+            app:layout_constraintEnd_toStartOf="@+id/delete_offer_constraint"
+            app:layout_constraintTop_toTopOf="@+id/market_code_text" />
+
+        <TextView
+            android:id="@+id/transaction_rate_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/default_card_value"
+            android:textSize="@dimen/text_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rate_hint_text" />
+
+        <TextView
+            android:id="@+id/transaction_amount_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/default_card_value"
+            android:textSize="@dimen/text_size"
+            app:layout_constraintBottom_toBottomOf="@+id/transaction_rate_text"
+            app:layout_constraintEnd_toStartOf="@+id/transaction_value_text"
+            app:layout_constraintStart_toEndOf="@+id/transaction_rate_text"
+            app:layout_constraintTop_toTopOf="@+id/transaction_rate_text" />
+
+        <TextView
+            android:id="@+id/current_amount_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/default_card_value"
+            android:textColor="?android:attr/textColorHint"
+            android:textSize="@dimen/hint_text_size"
+            app:layout_constraintBottom_toBottomOf="@+id/current_percentage_value_text"
+            app:layout_constraintEnd_toEndOf="@+id/transaction_amount_text"
+            app:layout_constraintStart_toStartOf="@+id/transaction_amount_text"
+            app:layout_constraintTop_toBottomOf="@+id/transaction_rate_text" />
+
+        <TextView
+            android:id="@+id/transaction_type_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:text="@string/default_card_value"
+            android:textSize="@dimen/text_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/market_code_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/default_card_value"
+            android:textSize="@dimen/text_size"
+            app:layout_constraintBottom_toBottomOf="@+id/transaction_type_text"
+            app:layout_constraintStart_toEndOf="@+id/transaction_type_text"
+            app:layout_constraintTop_toTopOf="@+id/transaction_type_text" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/current_amount_text"
+            app:layout_constraintEnd_toStartOf="@+id/current_amount_text"
+            app:layout_constraintStart_toEndOf="@+id/current_percentage_value_text"
+            app:layout_constraintTop_toTopOf="@+id/current_amount_text" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/delete_offer_constraint"
+            android:layout_width="48dp"
+            android:layout_height="0dp"
+            android:background="@color/bg_row_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageButton
+                android:id="@+id/delete_offer_image_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/baseline_delete_forever_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

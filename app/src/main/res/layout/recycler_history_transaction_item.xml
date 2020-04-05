@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+        <TextView
+            android:id="@+id/value_hint_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/valueHint"
+            android:textColor="?android:attr/textColorHint"
+            android:textSize="@dimen/hint_text_size"
+            app:layout_constraintBottom_toTopOf="@+id/transaction_value_text"
+            app:layout_constraintEnd_toEndOf="@+id/transaction_value_text"
+            app:layout_constraintStart_toStartOf="@+id/transaction_value_text" />
+
+        <TextView
+            android:id="@+id/rate_hint_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/rateHint"
+            android:textColor="?android:attr/textColorHint"
+            android:textSize="@dimen/hint_text_size"
+            app:layout_constraintEnd_toEndOf="@+id/transaction_rate_text"
+            app:layout_constraintStart_toStartOf="@+id/transaction_rate_text"
+            app:layout_constraintTop_toBottomOf="@+id/transaction_type_text" />
+
+        <TextView
+            android:id="@+id/amount_hint_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/amountHint"
+            android:textColor="?android:attr/textColorHint"
+            android:textSize="@dimen/hint_text_size"
+            app:layout_constraintBottom_toTopOf="@+id/transaction_amount_text"
+            app:layout_constraintEnd_toEndOf="@+id/transaction_amount_text"
+            app:layout_constraintStart_toStartOf="@+id/transaction_amount_text" />
+
+    <TextView
+        android:id="@+id/transaction_value_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="@string/default_card_value"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintBottom_toBottomOf="@+id/transaction_amount_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/transaction_amount_text" />
+
+    <TextView
+        android:id="@+id/transaction_date_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="@string/default_card_value"
+        android:textSize="@dimen/hint_text_size"
+        app:layout_constraintBottom_toBottomOf="@+id/market_code_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/market_code_text" />
+
+    <TextView
+        android:id="@+id/transaction_rate_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="4dp"
+        android:text="@string/default_card_value"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rate_hint_text" />
+
+        <TextView
+            android:id="@+id/transaction_amount_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/default_card_value"
+            android:textSize="@dimen/text_size"
+            app:layout_constraintBottom_toBottomOf="@+id/transaction_rate_text"
+            app:layout_constraintEnd_toStartOf="@+id/transaction_value_text"
+            app:layout_constraintStart_toEndOf="@+id/transaction_rate_text"
+            app:layout_constraintTop_toTopOf="@+id/transaction_rate_text" />
+
+    <TextView
+        android:id="@+id/transaction_type_text"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/default_card_value"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/market_code_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/default_card_value"
+            android:textSize="@dimen/text_size"
+            app:layout_constraintBottom_toBottomOf="@+id/transaction_type_text"
+            app:layout_constraintStart_toEndOf="@+id/transaction_type_text"
+            app:layout_constraintTop_toTopOf="@+id/transaction_type_text" />
+
+</android.support.constraint.ConstraintLayout>
